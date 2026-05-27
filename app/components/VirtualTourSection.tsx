@@ -3,13 +3,13 @@ export default function VirtualTourSection() {
     <section className="py-24 px-4 bg-white">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-14">
-          <span className="inline-block text-amber-600 text-sm font-semibold tracking-widest uppercase mb-3">
+          <span className="inline-block text-secondary text-sm font-semibold tracking-widest uppercase mb-3">
             Virtual Tour
           </span>
           <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
             Explore the Villa
           </h2>
-          <p className="text-gray-500 text-lg max-w-xl mx-auto">
+          <p className="text-secondary text-lg max-w-xl mx-auto">
             Take a 360° virtual walkthrough of THANN Pool Villa before you arrive
           </p>
         </div>

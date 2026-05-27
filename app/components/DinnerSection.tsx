@@ -27,32 +27,35 @@ export default function DinnerSection() {
       </div>
 
       {/* Right — info */}
-      <div className="w-full md:w-1/2 bg-stone-900 flex items-center">
+      <div className="w-full md:w-1/2 bg-secondary flex items-center">
         <div className="px-10 py-16 md:px-16 max-w-xl">
-          <span className="inline-block text-amber-400 text-sm font-semibold tracking-widest uppercase mb-4">
+          <span className="inline-block text-primary text-sm font-semibold tracking-widest uppercase mb-4">
             Dinner
           </span>
 
           <h2 className="text-4xl sm:text-5xl font-bold text-white leading-tight mb-2">
             ล้านริมน้ำ
           </h2>
-          <p className="text-amber-400 text-lg font-medium mb-6">
+          <p className="text-primary text-lg font-medium mb-2">
             Poolside dinner at the villa
           </p>
+          <p className="text-white/60 text-sm font-medium mb-6">
+            🕕 18:00
+          </p>
 
-          <p className="text-stone-400 leading-relaxed mb-8">
+          <p className="text-white/70 leading-relaxed mb-8">
             An evening feast served right by the pool as the sun sets over
             Khaoyai. Enjoy a spread of authentic Thai dishes with the whole
             team under the open sky.
           </p>
 
-          <p className="text-stone-400 text-xs font-semibold tracking-widest uppercase mb-3">
+          <p className="text-white/60 text-xs font-semibold tracking-widest uppercase mb-3">
             Menu
           </p>
-          <ul className="grid grid-cols-2 gap-x-6 gap-y-2 text-stone-200 text-sm">
+          <ul className="grid grid-cols-2 gap-x-6 gap-y-2 text-white/90 text-sm">
             {menu.map((item) => (
               <li key={item} className="flex items-center gap-2">
-                <span className="w-1.5 h-1.5 rounded-full bg-amber-400 shrink-0" />
+                <span className="w-1.5 h-1.5 rounded-full bg-primary shrink-0" />
                 {item}
               </li>
             ))}
