@@ -125,6 +125,7 @@ function Lightbox({
   onClose,
   onPrev,
   onNext,
+  onGoTo,
 }: {
   index: number;
   onClose: () => void;
