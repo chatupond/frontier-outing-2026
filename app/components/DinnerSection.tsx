@@ -30,14 +30,14 @@ export default function DinnerSection() {
       <div className="w-full md:w-1/2 bg-secondary flex items-center">
         <div className="px-10 py-16 md:px-16 max-w-xl">
           <span className="inline-block text-primary text-sm font-semibold tracking-widest uppercase mb-4">
-            Dinner
+            Poolside dinner at the villa
           </span>
 
           <h2 className="text-4xl sm:text-5xl font-bold text-white leading-tight mb-2">
-            ล้านริมน้ำ
+            Dinner
           </h2>
           <p className="text-primary text-lg font-medium mb-2">
-            Poolside dinner at the villa
+            Buffet จากร้านล้านริมน้ำ
           </p>
           <p className="text-white/60 text-sm font-medium mb-6">
             🕕 18:00

@@ -1,3 +1,5 @@
+import TypingText from "./TypingText";
+
 interface Car {
   id: number;
   members: string[];
@@ -90,7 +92,7 @@ export default function TransportSection() {
             Transportation
           </h2>
           <p className="text-white/60 text-lg max-w-xl mx-auto">
-            7 cars, 27 adventurers — everyone&apos;s covered
+            <TypingText text="7 cars, 29 adventurers — everyone's covered" />
           </p>
         </div>
 

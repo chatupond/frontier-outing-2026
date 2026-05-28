@@ -1,8 +1,26 @@
 "use client";
 
 import Image from "next/image";
+import { useEffect, useState } from "react";
+
+const FULL_TEXT = "Team outing getaway together <3";
 
 export default function HeroSection() {
+  const [displayed, setDisplayed] = useState("");
+  const [done, setDone] = useState(false);
+
+  useEffect(() => {
+    let i = 0;
+    const interval = setInterval(() => {
+      i++;
+      setDisplayed(FULL_TEXT.slice(0, i));
+      if (i >= FULL_TEXT.length) {
+        clearInterval(interval);
+        setDone(true);
+      }
+    }, 45);
+    return () => clearInterval(interval);
+  }, []);
   return (
     <section className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
       <Image
@@ -29,21 +47,20 @@ export default function HeroSection() {
 
      
 
-        <p className="text-2xl sm:text-3xl md:text-4xl text-white/85 font-light max-w-2xl mx-auto leading-relaxed drop-shadow">
-          <span className="text-primary">2026</span> - Team outing getaway together &lt;3{" "}
-         
+        <p className="text-2xl sm:text-3xl md:text-4xl font-light max-w-2xl mx-auto leading-relaxed drop-shadow text-primary">
+          {displayed}
+          {!done && <span className="animate-pulse">|</span>}
         </p>
 
-        <div className="mt-10 flex flex-wrap gap-4 justify-center">
-          <div className="flex items-center gap-2 px-5 py-2.5 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-white/90 text-sm">
+        <div className={`mt-10 flex flex-wrap gap-4 justify-center transition-all duration-700 ${done ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}>
+          <div className="flex items-center gap-2 px-5 py-2.5 rounded-full bg-primary text-secondary font-semibold text-sm">
             <span>📍</span>
             <span>June 6–7, 2026</span>
           </div>
-          <div className="flex items-center gap-2 px-5 py-2.5 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-white/90 text-sm">
+          <div className="flex items-center gap-2 px-5 py-2.5 rounded-full bg-primary text-secondary font-semibold text-sm">
             <span>👥</span>
             <span>29 Team Members</span>
           </div>
-          
         </div>
 
         <button

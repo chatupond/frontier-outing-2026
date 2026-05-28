@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useState, useEffect, useCallback } from "react";
+import TypingText from "./TypingText";
 import { createPortal } from "react-dom";
 
 const galleryImages = [
@@ -134,7 +135,13 @@ export default function GallerySection() {
             THANN Pool Villa - ธันน์
           </h2>
           <p className="text-secondary text-lg max-w-xl mx-auto">
-            A serene retreat nestled in the lush hills of Khaoyai
+            <TypingText text="A serene retreat nestled in the lush hills of Khaoyai" />
+          </p>
+          <p className="mt-4 flex items-center justify-center gap-1.5 text-gray-500 text-sm">
+            <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6l4 2m6-2a10 10 0 11-20 0 10 10 0 0120 0z" />
+            </svg>
+            Arrive at resort 14:30
           </p>
         </div>
 

@@ -11,6 +11,7 @@ import DinnerSection from "./components/DinnerSection";
 import BreakfastSection from "./components/BreakfastSection";
 import Footer from "./components/Footer";
 import ScrollReveal from "./components/ScrollReveal";
+import BackToTop from "./components/BackToTop";
 
 export default function Home() {
   return (
@@ -27,6 +28,7 @@ export default function Home() {
       <ScrollReveal><AmenitiesSection /></ScrollReveal>
       <ScrollReveal><BreakfastSection /></ScrollReveal>
       <ScrollReveal><Footer /></ScrollReveal>
+      <BackToTop />
     </main>
   );
 }

@@ -1,3 +1,5 @@
+import TypingText from "./TypingText";
+
 const amenities = [
   { icon: "🚿", th: "เครื่องทำน้ำอุ่น", en: "Hot Water Shower" },
   { icon: "💨", th: "ไดร์เป่าผม", en: "Hair Dryer" },
@@ -23,7 +25,9 @@ export default function AmenitiesSection() {
           <h2 className="text-4xl sm:text-5xl font-bold text-white mb-4">
             สิ่งอำนวยความสะดวก
           </h2>
-          <p className="text-white/60 text-lg">Room Facilities & Amenities</p>
+          <p className="text-white/60 text-lg">
+            <TypingText text="Room Facilities & Amenities" />
+          </p>
         </div>
 
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">

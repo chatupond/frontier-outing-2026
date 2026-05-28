@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useState, useEffect } from "react";
+import TypingText from "./TypingText";
 import { createPortal } from "react-dom";
 
 interface Room {
@@ -262,7 +263,7 @@ export default function BedroomSection() {
             Bedroom Assignments
           </h2>
           <p className="text-secondary text-lg max-w-xl mx-auto">
-            Six beautiful rooms, each with its own charm
+            <TypingText text="Six beautiful rooms, each with its own charm" />
           </p>
         </div>
 

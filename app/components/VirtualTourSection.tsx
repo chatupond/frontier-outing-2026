@@ -1,3 +1,5 @@
+import TypingText from "./TypingText";
+
 export default function VirtualTourSection() {
   return (
     <section className="py-24 px-4 bg-white">
@@ -10,7 +12,7 @@ export default function VirtualTourSection() {
             Explore the Villa
           </h2>
           <p className="text-secondary text-lg max-w-xl mx-auto">
-            Take a 360° virtual walkthrough of THANN Pool Villa before you arrive
+            <TypingText text="Take a 360° virtual walkthrough of THANN Pool Villa before you arrive" />
           </p>
         </div>
 

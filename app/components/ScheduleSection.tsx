@@ -1,3 +1,5 @@
+import TypingText from "./TypingText";
+
 interface ScheduleItem {
   time: string;
   title: string;
@@ -142,7 +144,7 @@ export default function ScheduleSection() {
             Trip Schedule
           </h2>
           <p className="text-secondary text-lg max-w-xl mx-auto">
-            Two days packed with food, fun, and unforgettable moments
+            <TypingText text="Two days packed with food, fun, and unforgettable moments" />
           </p>
         </div>
 
